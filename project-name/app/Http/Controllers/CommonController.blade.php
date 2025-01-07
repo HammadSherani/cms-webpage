@@ -1,8 +1,5 @@
 <?php
-
-namespace App\Http\Controllers\website;
-
-use App\Http\Controllers\Controller;
+namespace  App\Http\Controllers;
 use App\Mail\OrderMail;
 use App\Models\Marketer;
 use App\Models\Category;

@@ -75,7 +75,7 @@
                                 <h4 class="text-center mb-2">Product Image</h4>
                                 <div class="product__details__pic__item">
                                     <img class="product__details__pic__item--large"
-                                        src="{{ asset('uploads/product/images/' . $product->product_picture) }}"
+                                        src="{{env('main_url')}}/uploads/product/images/{{$product->product_picture}}"
                                         alt="product-img">
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                 <h4 class="text-center mb-2">Amazon Product Image</h4>
                                 <div class="product__details__pic__item">
                                     <img class="product__details__pic__item--large"
-                                        src="{{ asset('uploads/product/images/' . $product->amazon_picture) }}"
+                                        src="{{env('main_url')}}/uploads/product/images/{{$$product->amazon_picture}}"
                                         alt="amazon-product-pic">
                                 </div>
                             </div>

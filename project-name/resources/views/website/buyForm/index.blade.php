@@ -9,7 +9,9 @@
         <div class="col-md-6 mb-2">
             <div class="p-md-5 p-2 bg-white" style="border-radius: 14px">
                 <!-- Product Image -->
-                <img src="{{ asset('uploads/product/images/' . $product->product_picture) }}"
+                {{-- <img src="{{ asset('uploads/product/images/' . ) }}" --}}
+                <img src="{{env('main_url')}}/uploads/product/images/{{$product->product_picture}}"
+
                     class="img-fluid rounded shadow-sm mb-4"
                     alt="{{ $product->product_picture ? 'Image of ' . $product->keyword : 'Default Product Image' }}">
 

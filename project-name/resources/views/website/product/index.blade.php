@@ -110,9 +110,11 @@
                                 <div class="px-1 mix col-md-4 mb-3">
                                     <div class="card product-card"
                                         style="width: 100%; margin: auto; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                                        <img src="{{ asset('uploads/product/images/' . $product->product_picture) }}"
+                                        <img src="{{env('main_url')}}/uploads/product/images/{{$product->product_picture}}"
                                             class="card-img-top" alt="Product Image"
                                             style="height: 200px; object-fit: cover;">
+
+                                            
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;">
                                                 {{ \Illuminate\Support\Str::words($product->keyword, 20) }}

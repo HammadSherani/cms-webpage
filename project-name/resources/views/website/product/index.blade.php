@@ -113,8 +113,6 @@
                                         <img src="{{env('main_url')}}/uploads/product/images/{{$product->product_picture}}"
                                             class="card-img-top" alt="Product Image"
                                             style="height: 200px; object-fit: cover;">
-
-                                            
                                         <div class="card-body">
                                             <h5 class="card-title" style="font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;">
                                                 {{ \Illuminate\Support\Str::words($product->keyword, 20) }}
